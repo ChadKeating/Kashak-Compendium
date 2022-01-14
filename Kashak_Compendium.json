@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "KashakCompendium", 
+				"json": "KashakCompendium",
 				"abbreviation": "KASH",
 				"full": "The Kashak Compendium",
 				"url": "",
@@ -209,7 +209,7 @@
 								"Akra",
 								"Air/Wind/Speed/Recovery",
 								"Dexterity, Wisdom"
-							]
+							],
 							[
 								"Tranna",
 								"Fertility/Desire/Flowing Water",
