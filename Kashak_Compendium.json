@@ -1,0 +1,269 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KashakCompendium", 
+				"abbreviation": "KASH",
+				"full": "The Kashak Compendium",
+				"url": "",
+				"authors": [
+					"Kashak"
+				],
+				"convertedBy": []
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "True Strike (Revised)",
+			"source": "KashakCompendium",
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a melee weapon worth at least 1 sp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You brandish the weapon used in the spell's casting and make a melee weapon attack with it against a target you can see within the weapon's reach. If you are proficient with the weapon used, and would be forced to roll with disadvantage, roll only once instead.",
+				"On a hit, the target suffers the weapon attack's normal effects, and then becomes marked by a glowing aura of divination magic until the end of your next turn. If an attack targets the creature before then, add {@dice 1d4} to the attack roll, and the spell ends."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell adds damage when you reach certain levels. At 5th level, the initial attack you make as part of casting this spell deals an extra {@damage 1d8} force damage to the target on a hit, which increases by {@dice 1d8} at 11th level ({@dice 2d8}) and 17th level ({@dice 3d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	],
+	"races": [{
+		"name": "Elf (Deissan)",
+		"source": "KASH",
+		"size": [
+			"M"
+		],
+		"speed": 30,
+		"age": {
+			"mature": 100,
+			"max": 750
+		},
+		"darkvision": 60,
+		"traitTags": [
+			"Improved Resting"
+		],
+		"skillProficiencies": [
+			{
+				"perception": true
+			}
+		],
+		"languageProficiencies": [
+			{
+				"common": true,
+				"deissan": true
+			}
+		],
+		"soundClip": {
+			"type": "internal",
+			"path": "races/elf.mp3"
+		},
+		"entries": [
+			{
+				"name": "Age",
+				"type": "entries",
+				"entries": [
+					"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Size",
+				"entries": [
+					"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+				]
+			},
+			{
+				"name": "Darkvision",
+				"entries": [
+					"Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Keen Senses",
+				"entries": [
+					"You have proficiency in the {@skill Perception} skill."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Fey Ancestry",
+				"entries": [
+					"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Trance",
+				"entries": [
+					"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+					"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Languages",
+				"entries": [
+					"You can speak, read, and write Common and Deissan. Deissan is fluid, with subtle intonations and intricate grammar. Deissan literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Deissan ballads to their repertoires."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Elf Weapon Training",
+				"entries": [
+					"You have proficiency with the {@item longsword|phb}, {@item shortsword|phb}, {@item shortbow|phb}, and {@item longbow|phb}."
+				],
+				"type": "entries"
+			},
+			{
+				"name": "Blessed",
+				"type": "entries",
+				"entries": [
+					"The Deissan pantheon is active within its people, and every individual is favored by a God or Goddess. Your DM will choose which god favors your character based on your backstory and character traits, and may reveal them to you over time in a manner they see fit.",
+					{
+						"type": "table",
+						"caption": "Table 1: The Deissan Pantheon",
+						"colLabels": [
+							"God",
+							"Domain(s)",
+							"Attributes"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								"Rai'Oren",
+								"Death/Ends/Finales/Conclusions",
+								"Wisdom, Strength"
+							],
+							[
+								"Keyqirelle",
+								"Ceremony/Healing/Ritualism",
+								"Intelligence, Wisdom"
+							],
+							[
+								"Torqirelle",
+								"Light/Overcoming/Prophets",
+								"Wisdom, Charisma"
+							],
+							[
+								"Akra",
+								"Air/Wind/Speed/Recovery",
+								"Dexterity, Wisdom"
+							]
+							[
+								"Tranna",
+								"Fertility/Desire/Flowing Water",
+								"Charisma, Dexterity"
+							],
+							[
+								"Sylroris",
+								"Individuality/Strength/Prowess",
+								"Strength, Intelligence"
+							],
+							[
+								"Iliqen",
+								"Ancestry/Inheritance/Contracts",
+								"Intelligence, Charisma"
+							],
+							[
+								"Haehenn"
+								"Luxury/Revelry/Friends/Fire",
+								"Charisma, Strength"
+							],
+							[
+								",Haehalla",
+								"The Hunt/Natural Cycles/Earth",
+								"Dexterity, Strength"
+							],
+							[
+								"Quivin",
+								"Trade/Safe Passage/Refuge",
+								"Dexterity, Intelligence"
+							]
+						]
+					}
+				]
+			}
+		],
+		"hasFluff": true,
+		"hasFluffImages": true,
+		"raceName": "Elf",
+		"raceSource": "KASH",
+		"srd": false,
+		"basicRules": false,
+		"heightAndWeight": {
+			"baseHeight": 54,
+			"heightMod": "2d10",
+			"baseWeight": 90,
+			"weightMod": "1d4"
+		},
+		"weaponProficiencies": [
+			{
+				"longsword|phb": true,
+				"shortsword|phb": true,
+				"shortbow|phb": true,
+				"longbow|phb": true
+			}
+		]
+	}]
+}
