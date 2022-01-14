@@ -84,7 +84,7 @@
 			}
 		}
 	],
-	"races": [{
+	"race": [{
 		"name": "Elf (Deissan)",
 		"source": "KASH",
 		"size": [
